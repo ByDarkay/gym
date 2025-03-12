@@ -1,0 +1,206 @@
+body {
+    background: linear-gradient(135deg, #1a8d5f, #34d399);
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    padding: 8px 15px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.back-link:hover {
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateX(-5px);
+    color: #fff;
+}
+
+.routine-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.routine-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #1a8d5f, #34d399);
+}
+
+h2 {
+    color: #1a8d5f;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #34d399;
+    border-radius: 3px;
+}
+
+.exercise {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.exercise:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(26, 141, 95, 0.15);
+}
+
+.exercise-name {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #444;
+    font-size: 16px;
+}
+
+.exercise-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+    background: #1a8d5f;
+    padding: 10px;
+}
+
+.exercise-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.btn-detail {
+    background: #1a8d5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-detail:hover {
+    background: #148552;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(26, 141, 95, 0.2);
+    color: white;
+}
+
+.routine-progress {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-value {
+    height: 100%;
+    background: linear-gradient(90deg, #1a8d5f, #34d399);
+    width: 0%;
+    border-radius: 5px;
+    animation: progress 1s ease-in-out forwards;
+}
+
+@keyframes progress {
+    to { width: 30%; }
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.footer-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.footer-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.start-btn {
+    background: #1a8d5f;
+    color: white;
+    border: none;
+}
+
+.start-btn:hover {
+    background: #148552;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(26, 141, 95, 0.2);
+}
+
+.save-btn {
+    background: transparent;
+    color: #1a8d5f;
+    border: 1px solid #1a8d5f;
+}
+
+.save-btn:hover {
+    background: rgba(26, 141, 95, 0.1);
+    color: #148552;
+}
